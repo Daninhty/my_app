@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   get 'search', to: 'home#search', as: "search"
 
   resources :articles
-  resources :users
 
   root to: 'home#index'
 
