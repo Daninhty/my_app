@@ -11,9 +11,9 @@ user = User.create(data)
 
 user = User.first
 articles = [
-    {title: 'Artikel 1', description: 'Deskripsi artikel 1', user: user},
-    {title: 'Artikel 2', description: 'Deskripsi artikel 2', user: user},
-    {title: 'Artikel 3', description: 'Deskripsi artikel 3', user: user}
+    {title :'Artikel 1', description :'Deskripsi artikel 1', user: user},
+    {title :'Artikel 2', description :'Deskripsi artikel 2', user: user},
+    {title :'Artikel 3', description :'Deskripsi artikel 3', user: user}
 ]
 
 user = Article.create(articles)

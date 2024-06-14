@@ -1,2 +1,16 @@
 <h1></h1>
 <p></p>
+
+
+<ul>
+    <%- for article in @article do%>
+        <li>
+            <strong><%= link_to read_path(article_id: article.id), article.title %></strong>
+            <p><%= article.description %></p>
+            <small>
+            Oleh <%= article.created_at.to_s %>
+            pada <%= article.user.full_name %>
+            </small>
+        </li>
+        <%- end %>
+</ul>
